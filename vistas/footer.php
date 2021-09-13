@@ -5,7 +5,7 @@
 <section class="samp"> 
 <div class="server">
 <?php   
-$query = $user->connect()->prepare('SELECT * FROM pcu_cuentas WHERE Online = 1');
+$query = $user->connect()->prepare('SELECT * FROM users_online');
 ?>
 <div class="status">San Andreas Multiplayer: <strong style="font-weight: bold;"><?php echo $ip; ?></strong> <span>(<?php echo $query->rowCount(); ?> / 100)</span></div>
 </div>
@@ -14,7 +14,7 @@ $query = $user->connect()->prepare('SELECT * FROM pcu_cuentas WHERE Online = 1')
 <?php if($query->rowCount() == 0) { ?>
 <li style="color:#848484;">No hay jugadores online</li>
 <?php } else { while($con = $query->fetch(PDO::FETCH_ASSOC)){ ?>
-<li style="display:inline-block;color:#FFFFFF;" class="odd"><img src="<?php echo 'http://flags.fmcdn.net/data/flags/h80/'.strtolower(getCountryFromIP($con['IP'], "code")); ?>.png" title="<?php echo getCountryFromIP($con['IP']); ?>" alt="<?php echo getCountryFromIP($con['IP']); ?>"><span class="name"> <?php if($con['ADMIN_LEVEL'] > 4){echo '<span style="color:#FF0000;">[DUEÑO]</span> ';} else if($con['ADMIN_LEVEL'] > 0){echo '<span style="color:#0079FF;">[ADMIN]</span> ';} if($con['SU']){echo '<span style="color:#FFCF2F;">[VIP]</span> ';} echo $con['NAME'].' <span style="color:#02D09B;">('.$con['LEVEL'].')</span>';?></span></span></li>
+<li style="display:inline-block;color:#FFFFFF;" class="odd"><img src="<?php echo 'http://flags.fmcdn.net/data/flags/h80/'.strtolower(getCountryFromIP($con['ip'], "code")); ?>.png" title="<?php echo getCountryFromIP($con['ip']); ?>" alt="<?php echo getCountryFromIP($con['ip']); ?>"><span class="name"> <?php echo $con['nick'].' <span style="color:#02D09B;">('.$con['LEVEL'].')</span>';?></span></span></li>
 <?php } } ?>
 </ul>
 </div>

@@ -73,7 +73,7 @@ if(isset($_POST['submit']))
 
 			if($user->userExists($userForm, $passForm)){
 				$userSession->setCurrentUser($userForm);
-				echo "<script>window.location='samp';</script>";
+				echo "<script>window.location='samp.php';</script>";
 			}else echo '<div class="modal danger" id="modal-danger"><div class="modal-content" id="modal-content"><div class="modal-header" id="modal-header"><h3 class="modal-title">Ocurrieron varios errores</h3></div><div class="modal-body"><ul class="normal"><li>Algo salio mal.</li></ul></div><div class="modal-footer"><span class="btn btn-danger" id="cerrar">Cerrar (ESC)</span></div></div></div>';
 		}else echo '<div class="modal danger"><div class="modal-content"><div class="modal-header"><h3 class="modal-title">Ocurrieron varios errores</h3></div><div class="modal-body"><ul class="normal"><li>Algo salio mal.</li></ul></div><div class="modal-footer"><span class="btn btn-danger" id="cerrar">Cerrar (ESC)</span></div></div></div>';
 
