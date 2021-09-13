@@ -1,0 +1,1 @@
+<?php include_once 'includes/config.php'; echo $url_ac = 'http://'.$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI']; if($url_ac == 'http://'.$_SERVER['HTTP_HOST'].$url2.'/vehiculos') { header('location: http://'.$_SERVER['HTTP_HOST'].$url2.'/panel/vehiculos'); } ?>

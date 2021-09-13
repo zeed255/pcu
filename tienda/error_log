@@ -1,0 +1,7 @@
+[09-Jan-2018 17:17:26 America/New_York] PHP Parse error:  syntax error, unexpected '$c2' (T_VARIABLE) in /home/qugpkuvl/sundaysamp.com/tienda/ver.php on line 1237
+[09-Jan-2018 17:17:28 America/New_York] PHP Parse error:  syntax error, unexpected '$c2' (T_VARIABLE) in /home/qugpkuvl/sundaysamp.com/tienda/ver.php on line 1237
+[18-Jan-2018 10:35:41 America/New_York] PHP Parse error:  syntax error, unexpected '$c1' (T_VARIABLE) in /home/qugpkuvl/sundaysamp.com/tienda/ver.php on line 1242
+[18-Jan-2018 10:35:42 America/New_York] PHP Parse error:  syntax error, unexpected '$c1' (T_VARIABLE) in /home/qugpkuvl/sundaysamp.com/tienda/ver.php on line 1242
+[18-Jan-2018 10:36:43 America/New_York] PHP Parse error:  syntax error, unexpected '$lr' (T_VARIABLE) in /home/qugpkuvl/sundaysamp.com/tienda/ver.php on line 1241
+[18-Jan-2018 10:36:45 America/New_York] PHP Parse error:  syntax error, unexpected '$lr' (T_VARIABLE) in /home/qugpkuvl/sundaysamp.com/tienda/ver.php on line 1241
+[21-Jan-2018 15:50:29 America/New_York] PHP Parse error:  syntax error, unexpected '}' in /home/qugpkuvl/sundaysamp.com/tienda/ver.php on line 1396

@@ -1,0 +1,4 @@
+Por favor ve nuestra guia en youtube y realiza tu mismo la configuracion de tu servidor
+https://youtu.be/lh5-8C7Otaw
+
+La contraseña MYSQY por default es: PassDefault481
