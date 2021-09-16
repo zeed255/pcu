@@ -66,7 +66,7 @@ $user = new User();
 if(isset($_POST['submit']))
 {
 		if(isset($_POST['user']) && isset($_POST['password'])){
-		//echo "Validación de login";
+		echo "Validación de login";
 
 			$userForm = $_POST['user'];
 			$passForm = $_POST['password'];
